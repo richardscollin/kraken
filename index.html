@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Kraken by Limvot</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Kraken</h1>
+        <h2>The Kraken Programming Language</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/Limvot/kraken/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/Limvot/kraken/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/Limvot/kraken" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h3>
+<a name="welcome-to-kraken" class="anchor" href="#welcome-to-kraken"><span class="octicon octicon-link"></span></a>Welcome to Kraken!</h3>
+
+<p>The Kraken Programming Language is in its infancy. Currently, it consists of a RNGLALR parser written in C++, an experimental grammer that is evolving, and a C code generator. When compiled, the kraken compiler will take in a text file to be parsed, the grammer file to use, and an output file name. Kraken will then generate the RN parsing tables from the grammer OR load them from a binary file if Kraken has been run with this exact version of the grammer before. Then it will parse the input and export DOT files for every .krak file in the project (these can be renderd into a graph using Graphviz), a C file for every file in the project, and a .sh script containing the compiler command to compile the C files together into a binary.</p>
+
+<p>It is invoked in this way: </p>
+
+<pre><code>$ kraken inputTextFile.krak inputGrammerFile.kgm outputName
+</code></pre>
+
+<h3>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<p>It is built using CMake, which is also its only dependency.</p>
+
+<h3>
+<a name="goals" class="anchor" href="#goals"><span class="octicon octicon-link"></span></a>Goals</h3>
+
+<p>It has the following design goals:</p>
+
+<ul>
+<li>Compiled</li>
+<li>Clean</li>
+<li>Fast (both running and writing)</li>
+<li>Good for Systems (including Operating Systems) programming</li>
+<li>Minimal "magic" code. (no runtime, other libraries automatically included)</li>
+</ul><p>It is inspired by C/C++, Python, and Go.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
