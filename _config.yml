@@ -10,7 +10,7 @@ title:            Kraken
 tagline:          A Clean Systems Language
 url:              https://github.com/Limvot/kraken/
 paginate:         1
-baseurl:          /kraken
+baseurl:          http://limvot.github.io/kraken/
 author:
   name:           Nathan Braswell
   url:            http://limvot.github.io/
