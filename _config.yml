@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            Kraken
 tagline:          A Clean Systems Language
-url:              https://github.com/Limvot/kraken
+url:              https://github.com/Limvot/kraken/
 paginate:         1
 baseurl:          /
 author:
@@ -19,4 +19,4 @@ author:
 # Custom vars
 version:          0.0.0
 github:
-repo:           https://github.com/Limvot/kraken
+repo:           https://github.com/Limvot/kraken/
