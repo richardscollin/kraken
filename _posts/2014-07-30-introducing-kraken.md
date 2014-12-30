@@ -27,6 +27,16 @@ It is inspired by C/C++, Python, and Rust, and already supports some powerful fe
 import io;
 
 |int| main() {
+    io::println("Hello World!");
+    return 0;
+}
+{% endhighlight %}
+or
+
+{% highlight c %}
+import io: *;
+
+|int| main() {
     println("Hello World!");
     return 0;
 }
@@ -47,7 +57,7 @@ typedef BType {
     |int| data;
     |AType*| next;
     |void| print() {
-        println(data);
+        io::println(data);
     }
 }
 
@@ -63,8 +73,8 @@ typedef BType {
 
 ### Dynamic Memory
 {% highlight c %}
-import io;
-import mem;
+import io: *;
+import mem: *;
 
 typedef ClassWithConstructor {
     |int| data;
